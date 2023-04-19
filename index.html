@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find your film</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,9 +22,16 @@
     </header>
     <main>
         <div class="searchbar">
-            <input type="text" id="search-txt" placeholder="Search for a movie">
-            <button id="search-btn" class="btn">Search</button>
+            <input type="text" id="search-txt" placeholder="Search for a movie" style="flex-grow: 5">
+            <input type="submit" value="Search" id="search-btn" class="btn" style="flex-grow: 2">
+        </div>
+        <div class="container">
+            <div class="movie-list" id="movie-list">
+                <img src="/images/Icon-reel.png" alt="Film reel" class="bg-image">
+                <p class="bg-txt">Start exploring</p>
+            </div>
         </div>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>
