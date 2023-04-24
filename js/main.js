@@ -99,8 +99,6 @@ function removeMovieId(id) {
     }
 }
 
-
-
 function displayWatchList() {
     const watchList = JSON.parse(localStorage.getItem('moviesId'))
     if (!watchList || watchList.length == 0) {
